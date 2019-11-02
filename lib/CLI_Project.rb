@@ -1,6 +1,2 @@
-require "CLI_Project/version"
-
-module CLIProject
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./CLI_Project/version"
+require_relative "./CLI_Project/cli.rb"
