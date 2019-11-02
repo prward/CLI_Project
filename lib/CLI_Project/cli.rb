@@ -13,8 +13,10 @@ class CLIProject::CLI
     2. Horror
     3. Drama
     DOC
-    
-    @movies = CLIProject::Movie.showing    
+  end
+  
+  def movies
+    @movies = CLIProject::Movie
   end
   
   def menu
@@ -25,13 +27,14 @@ class CLIProject::CLI
       case input
       when "1"
         puts "Action movies currently playing:"
+        movies
       
       when "2"
         puts "Horror movies currently playing:"
-      
+        @horror
       when "3"
         puts "Drama movies currently playing:"
-        
+        @drama
       when "back"
         list_genres
         
