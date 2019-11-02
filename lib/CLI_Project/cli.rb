@@ -3,6 +3,7 @@ class CLIProject::CLI
   def call
     list_genres
     menu
+    quit
   end
   
   def list_genres
@@ -15,17 +16,25 @@ class CLIProject::CLI
   end
   
   def menu
-    puts "Type number of the genre you are looking for:"
-    input = get.strip
-    case input
-    when input "1"
-      puts "Action movies currently playing:"
+    puts "Type number of the genre you are looking for or type exit:"
+    input = nil
+    while input != exit do
+      input = get.strip
+      case input
+      when "1"
+        puts "Action movies currently playing:"
       
-    when input "2"
-      puts "Horror movies currently playing:"
+      when "2"
+        puts "Horror movies currently playing:"
       
-    when input "3"
-      puts "Drama movies currently playing:"
+      when "3"
+        puts "Drama movies currently playing:"
+      end
+    end
+  end
+  
+  def quit
+    puts "Thank you. Enjoy the movie!"
   end
 end
 
