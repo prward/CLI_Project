@@ -1,0 +1,9 @@
+CLI Thought process
+
+Movies playing near you by genre
+User types What's Playing
+Displays a list of genres
+pick a genre via 1, 2, or 3
+get a list of a couple movies for that genre
+gives short description of selected movie
+type exit to close

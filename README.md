@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/CLI_Project`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+This gem's purpose is to allow a user to pick a genre of movie and choose between a couple of options for each genre. Then to receive a short description of selected movie. Typing "exit" will close the program loop.
 
 ## Installation
 
