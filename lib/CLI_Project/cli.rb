@@ -18,8 +18,8 @@ class CLIProject::CLI
   def menu
     puts "Type number of the genre you are looking for or type exit:"
     input = nil
-    while input != exit do
-      input = get.strip
+    while input != "exit" 
+      input = gets.strip
       case input
       when "1"
         puts "Action movies currently playing:"
