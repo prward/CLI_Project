@@ -1,5 +1,5 @@
 class CLIProject::CLI
-  
+  #command interface when running ./bin/CLI_Project.rb
   def call
     list_genres
     menu
@@ -13,12 +13,14 @@ class CLIProject::CLI
     2. Horror
     3. Drama
     DOC
+    
+    @movies = CLIProject::Movie.showing    
   end
   
   def menu
-    puts "Type number of the genre you are looking for or type exit:"
+    puts "Type number of the genre you are looking for, back to return to menu or exit to quit:"
     input = nil
-    while input != "exit" 
+    while input != "exit"     #while loop to keep you inside program
       input = gets.strip
       case input
       when "1"
@@ -29,6 +31,12 @@ class CLIProject::CLI
       
       when "3"
         puts "Drama movies currently playing:"
+        
+      when "back"
+        list_genres
+        
+      else
+        puts "Please type a valid command."
       end
     end
   end
