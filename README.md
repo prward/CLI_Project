@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+./bin/CLI_Project.rb brings you to the menu where you can see a choice of movie genre. Selecting one will give you movies playing and their times and URL to buy tickets.
 
 ## Development
 
