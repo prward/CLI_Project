@@ -50,15 +50,15 @@ class CLIProject::CLI
       case input
       when "1"
         puts "Action movies currently playing:"
-        movie_1
+        #movie_1
       
       when "2"
         puts "Horror movies currently playing:"
-        movie_3
+        #movie_3
       
       when "3"
         puts "Drama movies currently playing:"
-        movie_4
+        #movie_4
       
       when "back"
         list_genres
